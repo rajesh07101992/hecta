@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.titleBolck {
+  display: flex;
+  align-items: center;
+}
+.mainHeading {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #091e25;
+  margin-block-start: 0px !important;
+  margin-block-end: 28px;
+}
+.mainHeading span {
+  border-bottom: 4px solid #00bbbb;
+}
+.referelContent .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3a3a3a;
+  margin-block-start: 0px !important;
+  margin-block-end: 40px;
+}
+.referelContent .desc span {
+  color: #4682b4;
+  text-decoration: underline;
+}
+
+.referelForm .formDetailsTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #091e25;
+  margin-block-start: 0px !important;
+  margin-block-end: 0px !important;
+  width: 14%;
+}
+.referelForm .formDetailsTitle span {
+  position: relative;
+}
+.referelForm .formDetailsTitle hr {
+  position: relative;
+  margin: -12px 0 0 0;
+  width: 89%;
+  float: right;
+  border: 1px solid #e0e0e0;
+}
+.personalDetailsBlock {
+  display: flex;
+  padding-top: 8px;
+}
+
+.leftpanel {
+  width: 40%;
+}
+.rightPanel {
+  width: 60%;
+}
+.personalDetailsBlock .leftpanel p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #707070;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.rightPanel .twoCol {
+  display: flex;
+  column-gap: 8px;
+}
+.twoCol .col {
+  width: 100%;
+}
+.rightPanel .label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #00bbbb;
+  margin-block-start: 0px;
+  margin-block-end: 4px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: -webkit-fill-available !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 5px !important;
+  padding: 8px 16px !important;
+  background-color: #fafafa !important;
+  font-size: 16px;
+  line-height: 19px;
+  color: #a0a0a0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  color: #091e25 !important;
+}
+.twoCol input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  background: #f4f4f4;
+  border: 1px solid #bcbcbc;
+  border-radius: 4px;
+  display: inline;
+}
+.checkB {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  display: inline;
+}
+
+.aggreement {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #091e25;
+  margin-block-start: 0;
+  margin-block-end: 8px;
+}
+.aggreement a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #091e25;
+  text-decoration: underline;
+}
+
+.submitButton {
+  background: #091e25;
+  border-radius: 5px;
+  color: #fff !important;
+  padding: 10px 30px !important;
+  border:1px solid #091e25 !important;
+}
