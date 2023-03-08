@@ -15,11 +15,10 @@
   </head>
   <body>
     <div class="referelContent">
-      <h1 class="mainHeading"><span>Ref</span>er & Earn</h1>
+      <h1 class="mainHeading"><span>Referral Program</span></h1>
       <p class="desc">
-        Are your friends and family looking to invest in real estate?<br />
-        Refer Hecta and earn up to <strong>₹10,000</strong> on their first
-        <span>successful transaction</span>.
+        Are your friends and family looking to invest in real estate?
+        Refer and earn ₹10,000 every time they buy a property on Hecta.
       </p>
       <form class="referelForm">
         <!-- Personal Details -->
@@ -36,39 +35,30 @@
           </div>
           <div class="rightPanel">
             <div class="twoCol">
-              <div class="col">
+              <div class="col1">
                 <p class="label">Name</p>
-                <input type="text" placeholder="Full Name" />
+                <input type="text" placeholder="Name" id="userName" />
+                <p id="userNameError" class="error"></p>
               </div>
-              <div class="col">
-                <p class="label">Phone Number</p>
-                <input type="text" placeholder="Valid Phone Number" />
+              <div class="col1">
+                <p class="label">Contact Number</p>
+                <input type="text" placeholder="Contact Number" id="userNumber" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" minlength="10" maxlength="10"/>
+                <p class="error" id="userNumberError"></p>
               </div>
             </div>
-            <div style="height: 16px"></div>
+            <div style="height: 12px"></div>
             <div class="twoCol">
-              <div class="col">
+              <div class="col1">
                 <p class="label">Email Address</p>
-                <input type="email" placeholder="Valid Email Address" />
-                <div
-                  style="
-                    padding-top: 12px;
-                    display: flex;
-                    align-items: center;
-                    column-gap: 8px;
-                  "
-                >
-                  <input type="checkbox" /><label class="checkB"
-                    >Same as Hecta registered email.</label
-                  >
-                </div>
+                <input type="email" placeholder="Email Address" id="userEmail"/>
+                <p class="error" id="userEmailError" ></p>
               </div>
-              <div class="col"></div>
+              <div class="col1"></div>
             </div>
           </div>
         </div>
         <!-- End Personal Details -->
-        <div style="height: 20px"></div>
+        <div style="height: 8px"></div>
         <!--  Referral Details -->
         <div class="titleBolck">
           <h2 class="formDetailsTitle">Referral Details</h2>
@@ -82,37 +72,63 @@
           </div>
           <div class="rightPanel">
             <div class="twoCol">
-              <div class="col">
+              <div class="col1">
                 <p class="label">Name</p>
-                <input type="text" placeholder="Full Name" />
+                <input type="text" placeholder="Name" id="referralName"/>
+                <p class="error" id="referralNameError"></p>
               </div>
-              <div class="col">
-                <p class="label">Phone Number</p>
-                <input type="text" placeholder="Valid Phone Number" />
+              <div class="col1">
+                <p class="label">Contact Number</p>
+                <input type="text" placeholder="Contact Number" id="refferralNumber" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" minlength="10" maxlength="10"/>
+                <p class="error" id="refferralNumberError"></p>
               </div>
             </div>
-            <div style="height: 16px"></div>
+            <div style="height: 12px"></div>
             <div class="twoCol">
-              <div class="col">
+              <div class="col1">
                 <p class="label">Email Address</p>
-                <input type="email" placeholder="Valid Email Address" />
+                <input type="email" placeholder="Email Address" id="referralEmail"/>
+                <p class="error" id="referralEmailError"></p>
               </div>
-              <div class="col">
-                <p class="label">Location(Optional)</p>
-                <input type="email" placeholder="Enter Locality, City, State" />
+              <div class="col1">
+                <p class="label">City(Optional)</p>
+                <input type="text" placeholder="Enter City, State" id="referralCity"/>
               </div>
             </div>
-            <div style="padding-top: 20px">
-              <p class="aggreement">
-                I agree to Hecta’s <a href="">Terms of Service</a> and
-                <a href="">Privacy Policy</a>.
-              </p>
-              <button type="submit" class="submitButton">Submit</button>
+                   <div
+                  style="
+                    padding-top: 8px;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 8px;
+                  "
+                >
+                  <input type="checkbox" id="declaration"/>
+                  <p class="aggreement">
+                    I agree to Hecta’s <a href="">Terms of Service</a> and
+                    <a href="">Privacy Policy</a>.
+                  </p>
+                </div>
+                <span class="error" id="declarationError"></span>
+                
+            <div class="pd">
+                <button type="submit" id="refForm" class="submitButton">Submit</button>
             </div>
           </div>
         </div>
         <!-- End Referral Details -->
       </form>
+     <div class="lineBreak"></div>
+     <h1 class="mainHeading"><span>How to become a referral partner?</span></h1>
+     <p class="desc">
+      Just follow these simple steps and earn on every successful referral today
+     </p>
+     <div class="stepImg">
+      <img src="https://hecta.co/wp-content/uploads/2022/01/tr.jpg" width="100%">
+      <img src="https://hecta.co/wp-content/uploads/2022/01/tr.jpg" width="100%">
+      <img src="https://hecta.co/wp-content/uploads/2022/01/tr.jpg" width="100%">
+     </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
